@@ -11,17 +11,21 @@
 
 :root {
   --para-color: #8987a1;
-  --primary-color: #e95a08;
+  --btn-color: #e95a08;
 }
 
 /* Shared Styles */
 
-.section {
-  max-width: 1180px;
+.container {
+  width: 88%;
   margin: 0 auto;
 }
 
 /* Header */
+
+header{
+  margin-top: 2rem;
+}
 
 nav {
   display: flex;
@@ -68,9 +72,6 @@ nav {
 /* Small Screen */
 
 @media screen and (max-width: 576px) {
-  .section {
-    margin: 0 1rem;
-  }
 
   #logo img {
     width: 50%;
@@ -78,5 +79,74 @@ nav {
 
   .links {
     display: none;
+  }
+}
+
+/* Hero Section */
+
+.hero{
+  margin: 10rem auto 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 2.5rem;
+  width: 88%;
+}
+
+.hero div{
+  width: 50%;
+}
+
+.hero-left h1, .fresh{
+  font-size: 4rem;
+  font-family: "Noto Serif";
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.fresh{
+  color: var(--btn-color);
+}
+
+.hero-left p{
+  color: var(--para-color);
+  font-size: 1.3rem;
+}
+
+/* Small Screen */
+
+@media screen and (max-width: 576px) {
+  
+  .hero{
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  .hero div{
+    width: 100%;
+  }
+
+  .hero-left h1, .fresh{
+    font-size: 1.5rem;
+  }
+
+  .hero-left h1{
+    width: 50%;
+    margin-left: 1.5rem;
+  }
+
+  .hero-left p{
+    font-size: 0.875rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .hero-right{
+    width: 100%;
+  }
+
+  .hero-right img{
+    width: 100%;
   }
 }
