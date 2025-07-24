@@ -318,3 +318,153 @@ nav {
     display: none;
   }
 }
+
+/* Latest Deals Section */
+
+.deals{
+  margin-top: 8rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.deals p{
+  width: 70%;
+  margin: 0 auto 8rem;
+}
+
+.deal-img-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deal-left{
+  width: 30%;
+  display: grid;
+  gap: 2rem;
+}
+
+#bloom{
+  background:  rgba(0, 0, 0, 0.38)url('../assets/deal-bloom.png');
+  background-blend-mode: darken;
+  height: 12rem;
+  border-radius: 14px;
+}
+
+#ana{
+  background: rgba(0, 0, 0, 0.38)url('../assets/deal-ana.png');
+  background-blend-mode: darken;
+  height: 12rem;
+  border-radius: 14px;
+}
+
+/* .deal-left h5, a{
+  margin-top: 15%;
+  background: transparent;
+  color: white;
+} */
+
+.deal-left h5{
+  font-family: "Noto Serif", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  margin-top: 15%;
+  background: transparent;
+  color: white;
+}
+
+.deal-left a{
+  font-weight: 600;
+  margin-top: 15%;
+  background: transparent;
+  color: white;
+}
+
+.deal-right{
+  background: rgba(0, 0, 0, 0.38)url('../assets/deal-zabo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 26rem;
+  border-radius: 22px;
+  width: 67%;
+}
+
+.deal-right h1, a{
+  margin-top: 20%;
+  background: transparent;
+  color: white;
+}
+
+.deal-right h1{
+  font-family: "Noto Serif", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.deal-right a{
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+/* Small Screen */
+
+@media screen and (max-width: 576px) {
+
+  .latest {
+    font-size: 1.5rem;
+  }
+
+  .deals p{
+    font-size: 0.875rem;
+    width: 100%;
+    margin: 0 auto 3.5rem;
+  }
+
+  .deal-img-container{
+  flex-direction: column;
+  gap: 1rem;
+  }
+
+  .deal-left{
+  width: 100%;
+  gap: 1rem;
+  }
+
+  #bloom, #ana, .deal-right {
+    height: 10rem;
+    border-radius: 14px;
+  }
+
+  #bloom{
+    background:  rgba(0, 0, 0, 0.65)url('../assets/deal-bloom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #ana{
+    background: rgba(0, 0, 0, 0.65)url('../assets/deal-ana.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .deal-right{
+    background: rgba(0, 0, 0, 0.65)url('../assets/deal-zabo.png');
+    width: 100%;
+  }
+
+  .deal-right h1{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-top: 14%;
+  }
+
+  .deal-right a{
+    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
