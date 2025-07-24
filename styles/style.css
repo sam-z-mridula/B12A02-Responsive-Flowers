@@ -325,7 +325,6 @@ nav {
 .deals{
   margin-top: 8rem;
   text-align: center;
-  margin-bottom: 5rem;
 }
 
 .deals p{
@@ -461,5 +460,85 @@ nav {
     font-weight: 600;
     font-size: 1rem;
     font-weight: 600;
+  }
+}
+
+/* Join Section */
+
+.join{
+  margin-top: 8rem;
+  height: 70vh;
+  background: url('../assets/news-letter-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 5rem;
+}
+
+.join-text{
+  padding-top: 13%;
+  background: transparent;
+  text-align: center;
+  position: relative;
+}
+
+.join-text h1{
+  background: transparent;
+  color: white;
+  font-family: "Noto Serif", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.join-text input{
+  border: none;
+  padding: 1rem 1.5rem;
+  width: 56%;
+}
+
+.subscribe{
+  position: absolute;
+  border: none;
+  background-color: var(--btn-color);
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  width: 12%;
+  right: 22%;
+}
+
+/* Small Screen */
+
+@media screen and (max-width: 576px) {
+
+  .join {
+    height: 31vh;
+    margin-top: 3rem;
+  }
+
+  .join-text {
+    padding-top: 25%;
+  }
+
+  .join-text h1{
+    font-size: 1.25rem;
+  }
+
+  .join-text input{
+  border: none;
+  padding: 1.25rem 1.5rem;
+  width: 80%;
+  }
+
+  .join-text input::placeholder{
+    font-size: 1.15rem;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .subscribe{
+    width: 25%;
+    right: 10%;
+    padding: 1.13rem 1rem;
+    font-size: 1rem;
   }
 }
