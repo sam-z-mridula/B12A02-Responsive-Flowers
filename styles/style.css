@@ -56,7 +56,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.5rem;
 }
 
 #nav-links {
@@ -67,11 +66,13 @@ nav {
 
 .links {
   display: flex;
+  align-items: center;
   gap: 3rem;
 }
 
 .links a {
   text-decoration: none;
+  margin-top: 0;
 }
 
 .links a:nth-child(1) {
@@ -357,12 +358,6 @@ nav {
   height: 12rem;
   border-radius: 14px;
 }
-
-/* .deal-left h5, a{
-  margin-top: 15%;
-  background: transparent;
-  color: white;
-} */
 
 .deal-left h5{
   font-family: "Noto Serif", sans-serif;
