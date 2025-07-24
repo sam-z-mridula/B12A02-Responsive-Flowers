@@ -280,6 +280,17 @@ nav {
   top: -4rem;
   left: 27rem;
   background: transparent;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Small Screen */
@@ -592,5 +603,6 @@ footer {
 
   .footer-1 p {
     font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
