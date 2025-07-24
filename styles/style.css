@@ -251,3 +251,70 @@ nav {
     margin-bottom: 1.75rem;
   }
 }
+
+/* Plant Lover Section */
+
+.lover {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  position: relative;
+}
+
+.lover-right {
+  width: 40%;
+}
+
+.lover-right ul {
+  margin-left: 2.25rem;
+}
+
+.lover-right ul li {
+  margin-bottom: 1.5rem;
+}
+
+#badge {
+  position: absolute;
+  width: 15%;
+  top: -4rem;
+  left: 27rem;
+  background: transparent;
+}
+
+/* Small Screen */
+
+@media screen and (max-width: 576px) {
+  .lover {
+    flex-direction: column;
+    margin-top: -7rem;
+    gap: 2rem;
+  }
+
+  .lover-left {
+    width: 100%;
+  }
+
+  .lover-left img {
+    width: 100%;
+  }
+
+  .lover-right {
+    width: 100%;
+  }
+
+  .lover-right ul {
+    margin-left: 1.5rem;
+  }
+
+  .lover-right h2 {
+    font-size: 1.5rem;
+  }
+
+  .lover-right .para {
+    font-size: 0.875rem;
+  }
+
+  #badge {
+    display: none;
+  }
+}
